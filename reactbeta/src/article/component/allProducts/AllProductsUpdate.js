@@ -64,8 +64,10 @@ const AllProductsUpdate = () => {
         },
         [allProductsUpdate]
     );
-    return( <>
-    <h1>수정 페이지</h1>
+
+    return (
+        <>
+            <h1>수정 페이지</h1>
             <form onSubmit={handleSubmit} method="post">
                 <label htmlFor="title">
                     <b>제목</b>
@@ -76,7 +78,7 @@ const AllProductsUpdate = () => {
                     <b>메인사진</b>
                 </label>
                 <input type="text" placeholder="Enter Writer" name="writer" id="writer" onChange={handleChange} required />
-              
+
                 <label htmlFor="writer">
                     <b>작성자</b>
                 </label>
@@ -96,6 +98,6 @@ const AllProductsUpdate = () => {
             </form>
             <Link to="/FeedBoardList">목록으로</Link>
         </>
-    </>);
+    );
 };
 export default AllProductsUpdate;

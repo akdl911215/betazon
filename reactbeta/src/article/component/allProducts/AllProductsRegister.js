@@ -1,12 +1,13 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
+import axios from 'axios';
 
 const AllProductsRegister = () => {
     const [allProductsRegister, setAllProductsRegister] = useState({
-        title: ' ',
-        writer: ' ',
-        mainPicture: ' ',
-        content: ' ',
-        price: ' ',
+        title: '',
+        writer: '',
+        mainPicture: '',
+        content: '',
+        price: '',
     });
 
     const [title, writer, mainPicture, content, price] = allProductsRegister;
